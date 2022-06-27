@@ -13,3 +13,10 @@
 @import '../components/progress-bar.css';
 
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE, please */
+
+section.container.bg-main {
+    padding-bottom: 20px;
+}
+footer.container {
+    padding-top: 0;
+}
