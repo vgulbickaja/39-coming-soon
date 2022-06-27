@@ -1,12 +1,17 @@
 .container {
-    width: 1000px;
+    width: 100%;
     padding: 60px 0px;
 }
+
 .container > .row {
     width: 1000px;
     margin: 0 calc(50% - 500px);
-
 }
+.container > .row-short {
+    width: 600px;
+    margin: 0 calc(50% - 300px);
+}
+
 @media (max-width: 1100px) {
     .container > .row {
         width: 800px;
@@ -14,16 +19,26 @@
     }
 }
 @media (max-width: 900px) {
-    .container {
+    .container > .row {
         width: 600px;
         margin: 0 calc(50% - 300px);
     }
 }
 
-@media (max-width: 1100px) {
-    .container {
+@media (max-width: 700px) {
+    .container > .row,
+    .container > .row-short {
         width: 400px;
         margin: 0 calc(50% - 200px);
+    }
+
+}
+
+@media (max-width: 440px) {
+    .container > .row,
+    .container > .row-short {
+        width: 100%;
+        margin: 0;
         padding-left: 20px;
         padding-right: 20px;
     }
