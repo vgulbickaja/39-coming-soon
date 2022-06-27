@@ -14,9 +14,45 @@
 
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE, please */
 
-section.container.bg-main {
+.hero {
     padding-bottom: 20px;
+}
+
+.hero > .row-short {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+}
+
+.logo {
+    height: 60px;
+    width: 100%;
+    margin-bottom: 20px;
+    object-fit: contain;
+}
+
+.main-title {
+    font-size: 70px;
+    text-transform: uppercase;
+}
+
+.main-description {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.clock {
+    margin: 40px 0;
+}
+
 }
 footer.container {
     padding-top: 0;
+}
+
+@media (max-width: 500px) {
+    .main-title {
+        font-size: 60px;
+}
+
 }
