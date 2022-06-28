@@ -94,6 +94,7 @@
 
 footer.container {
     padding-top: 0;
+    text-align: center;
 }
 
 .socials {
@@ -122,6 +123,18 @@ footer.container {
     color: var(--main-color);
 }
 
+.credits {
+    display: flex;
+    gap: 30px;
+    color: #fff8;
+}
+
+.credits > p {
+   
+}
+.credits > p > a {
+    color:#fff;
+}
 /* FOOTER SECTION - end */
 
 @media (max-width: 700px) {
