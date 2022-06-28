@@ -14,6 +14,9 @@
 
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE, please */
 
+/* HERO SECTION - start */
+
+
 .hero {
     padding-bottom: 20px;
 }
@@ -30,6 +33,7 @@
     width: 100%;
     margin-bottom: 20px;
     object-fit: contain;
+    object-position: center;
 }
 
 .main-title {
@@ -41,18 +45,71 @@
     font-size: 20px;
     text-transform: uppercase;
 }
+
+
 .clock {
     margin: 40px 0;
 }
+/* HERO SECTION - end */
+
+/* MAIN SECTION - start */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 50%;
+}
+.right-column {
+    width: 40%;
+}
+
+.column-title {
+    text-transform: uppercase;
+    font-size: 18px;
 
 }
+
+.column-description {
+    font-size: 17px;
+    color: #777;
+
+}
+
+.column-description {
+    color: var(--secondary-color);
+}
+
+.column-description > a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+/* MAIN SECTION - end */
+
+/* FOOTER SECTION - start */
+
 footer.container {
     padding-top: 0;
+}
+/* FOOTER SECTION - end */
+
+@media (max-width: 700px) {
+    .main-content {
+        flex-direction: column;
+        row-gap: 40px;
+}
+    .main-content > * {
+        width: 100%;
+    }
+
 }
 
 @media (max-width: 500px) {
     .main-title {
-        font-size: 60px;
-}
-
+        font-size: 50px;
+    }
 }
